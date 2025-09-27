@@ -1,0 +1,54 @@
+.section {
+  padding: 40px 20px;
+  background: transparent;
+}
+
+.section.sm {
+  padding: 56px 20px;
+}
+
+.section.dark {
+  background: #0e1b12;
+}
+
+.section.light {
+  background: #ffffff;
+}
+
+.section-muted {
+  background: #f7f9f7;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #2b3a2f;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: #4a5a4d;
+  font-size: 15px;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+.card {
+  border: 1px solid #e7ebea;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card.dark {
+  background: #0e1b12;
+  color: #d6e6d9;
+  border-color: #2b3a2f;
+}
+
+

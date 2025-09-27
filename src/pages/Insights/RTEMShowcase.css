@@ -1,0 +1,409 @@
+/* RTEM Showcase Page Styles - Matching Environmental Site Review Layout */
+
+/* Section 1: Smarter Operations Start With Real-Time Data */
+.rtem-section {
+  padding: 80px 20px;
+  background: #ffffff;
+  position: relative;
+}
+
+.rtem-section::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(189, 216, 153, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(189, 216, 153, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.section-main-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2b3a2f;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #4a5a4d;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 800px;
+}
+
+.key-benefits-section {
+  margin-bottom: 30px;
+}
+
+.key-benefits-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4e8a00;
+  margin-bottom: 30px;
+}
+
+.key-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.key-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #f7f9f7;
+  border-radius: 8px;
+  border-left: 4px solid #4e8a00;
+}
+
+.key-benefit-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.key-benefit-item span {
+  font-size: 15px;
+  color: #2b3a2f;
+  font-weight: 500;
+}
+
+/* Section 2: See it in Action */
+.dashboard-section {
+  padding: 80px 20px;
+  background: #f7f9f7;
+}
+
+.dashboard-features {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.feature-boxes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.feature-box {
+  position: absolute;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 250px;
+  pointer-events: auto;
+}
+
+.feature-box h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2b3a2f;
+  margin: 0 0 8px 0;
+}
+
+.feature-box p {
+  font-size: 14px;
+  color: #4a5a4d;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Position the 4 feature boxes */
+.feature-box:nth-child(1) {
+  top: 10%;
+  left: -50px;
+}
+
+.feature-box:nth-child(2) {
+  top: 20%;
+  right: -50px;
+}
+
+.feature-box:nth-child(3) {
+  bottom: 15%;
+  left: -70px;
+}
+
+.feature-box:nth-child(4) {
+  bottom: 20%;
+  right: 0px;
+}
+
+.dashboard-mockup {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dashboard-image {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.dashboard-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.dummy-data-note {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+ 
+  color: rgb(0, 0, 0);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Section 3: Health Outcomes in Real Projects */
+.projects-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.project-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.project-arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2b3a2f;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  padding: 30px;
+  background: #ffffff;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4e8a00;
+  margin-bottom: 15px;
+}
+
+.project-type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #4a5a4d;
+}
+
+.building-icon {
+  font-size: 16px;
+}
+
+.project-outcomes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-outcomes li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: #4a5a4d;
+  position: relative;
+  padding-left: 20px;
+}
+
+.project-outcomes li::before {
+  content: '•';
+  color: #4e8a00;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.projects-cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  color: #2b3a2f;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.cta-arrow {
+  font-size: 18px;
+  color: #4e8a00;
+}
+
+/* Section 4: Track What Incentives Require */
+.incentives-section {
+  padding: 80px 20px;
+  background: #f7f9f7;
+}
+
+.incentives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.incentive-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.incentive-card:hover {
+  transform: translateY(-4px);
+}
+
+.incentive-image {
+  margin-bottom: 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.incentive-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.incentive-card p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2b3a2f;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .feature-box {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-main-title {
+    font-size: 28px;
+  }
+  
+  .key-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .incentives-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects-cta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .rtem-section,
+  .dashboard-section,
+  .projects-section,
+  .incentives-section {
+    padding: 60px 15px;
+  }
+  
+  .section-main-title {
+    font-size: 24px;
+  }
+  
+  .key-benefit-item,
+  .incentive-card {
+    padding: 15px;
+  }
+  
+  .project-content {
+    padding: 20px;
+  }
+  
+  .feature-box {
+    padding: 15px;
+  }
+}

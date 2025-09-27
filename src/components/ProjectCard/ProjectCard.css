@@ -1,0 +1,28 @@
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .project-card h3 {
+    color: #003366;
+    margin-bottom: 0.3rem;
+  }
+  
+  .project-card .location {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .project-card ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+  }
+  
+  .project-card .outcome {
+    color: #00cc66;
+  }
+  

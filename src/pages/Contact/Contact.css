@@ -1,0 +1,92 @@
+.contact-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.contact-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.contact-left {
+  width: 35%;
+  background: #2a2a2a;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.contact-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.green-accent-line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #90EE90;
+  z-index: 2;
+}
+
+.contact-right {
+  width: 65%;
+  background: #ffffff;
+  padding: 3rem 4rem;
+  overflow-y: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .contact-left {
+    width: 100%;
+    height: 40vh;
+    padding: 0;
+  }
+  
+  .contact-right {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-right {
+    padding: 1rem;
+  }
+  
+  .form-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+}

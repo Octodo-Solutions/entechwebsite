@@ -1,0 +1,74 @@
+.cn-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+}
+
+.cn-card {
+  background: #121312;
+  color: #e7f2e8;
+  border-radius: 12px;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 40px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.cn-leaf {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  align-self: center;
+}
+
+.cn-title {
+  color: #8df24a;
+  font-size: 32px;
+  margin: 0 0 14px 0;
+}
+
+.cn-desc {
+  color: #d7dfd8;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.cn-desc.small {
+  color: #c2cdc3;
+  font-size: 14px;
+}
+
+.cn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #ffffff;
+  color: #111;
+  border: none;
+  border-radius: 28px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cn-emoji {
+  font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .cn-card {
+    grid-template-columns: 1fr;
+  }
+
+  .cn-leaf {
+    max-width: 260px;
+    justify-self: center;
+  }
+}
+
+

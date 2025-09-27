@@ -1,0 +1,131 @@
+.page-hero {
+  position: relative;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.page-hero-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  color: #fff;
+  width: 100%;
+}
+
+.page-hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color:  #4e8a00;
+}
+
+.page-hero-subtitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  color: #ffffff;
+  max-width: 900px;
+}
+
+.page-hero-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  line-height: 1.5;
+  color: #e9f0eb;
+  max-width: 900px;
+}
+
+.page-hero-button {
+  background: #f5f5f5;
+  color: #2b3a2f;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: filter 0.3s ease;
+}
+
+.page-hero-button::after {
+  content: "→";
+  background: #547727;
+  color: #ffffff;
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.page-hero-button:hover {
+  filter: brightness(0.95);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 350px;
+  }
+  
+  .page-hero-container {
+    padding: 60px 20px;
+  }
+  
+  .page-hero-title {
+    font-size: 36px;
+  }
+  
+  .page-hero-subtitle {
+    font-size: 24px;
+  }
+  
+  .page-hero-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    min-height: 300px;
+  }
+  
+  .page-hero-container {
+    padding: 40px 20px;
+  }
+  
+  .page-hero-title {
+    font-size: 28px;
+  }
+  
+  .page-hero-subtitle {
+    font-size: 20px;
+  }
+  
+  .page-hero-description {
+    font-size: 14px;
+  }
+}

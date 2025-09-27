@@ -1,0 +1,117 @@
+.building-types {
+}
+
+.building-types .cards {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.building-types .card.card {
+  border: 1px solid #e7ebea;
+  border-radius: 18px;
+  padding: 20px 18px;
+  background: #ffffff;
+  color: #2b3a2f;
+  min-height: 140px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.building-types .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark hover style to match reference */
+.building-types .card.card:hover {
+  background: #0b0e0b;
+  border-color: #0b0e0b;
+  color: #e8efe8;
+}
+
+.building-types .card.card.highlighted {
+  background: #0e1b12;
+  color: #d6e6d9;
+  border-color: #2b3a2f;
+}
+
+.building-types .card.card.highlighted h3 {
+  color: #c9f1c7;
+}
+
+.building-types .card.card.highlighted p {
+  color: #b7cabb;
+}
+
+.building-types .card-arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-weight: bold;
+  content: "→";
+  background: #547727;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+
+}
+
+.building-types .card.card.highlighted .card-arrow {
+  background: #ffffff;
+  color: #2b3a2f;
+}
+
+/* Colors on dark hover */
+.building-types .card.card:hover h3,
+.building-types .card.card.highlighted h3 {
+  color: #b4ec7a;
+}
+
+.building-types .card.card:hover p {
+  color: #cfdad0;
+}
+
+.building-types .card.card:hover .card-arrow {
+  background: #e1e5e1;
+  color: #111;
+}
+
+.building-types .card-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.building-types .card h3 {
+  font-size: 22px;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.building-types .card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #4a5a4d;
+}
+
+.building-types .card.highlighted p {
+  color: #b7cabb;
+}
+
+@media (max-width: 900px) {
+  .building-types .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .building-types {
+    padding: 60px 20px;
+  }
+}

@@ -1,0 +1,40 @@
+.projects-hero {
+    position: relative;
+    min-height: 320px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.projects-heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .55);
+}
+
+.projects-heroContainer {
+    position: relative;
+    z-index: 1;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    color: #fff;
+}
+
+.projects-heroTitle {
+    font-size: 42px;
+    margin: 0 0 8px 0;
+   
+}
+
+.projects-heroSubtitle {
+    max-width: 860px;
+    color: #e9f0eb;
+}
+
+.projects-heroDescription {
+    max-width: 860px;
+    color: #d8e5dc;
+    margin-top: 8px;
+}

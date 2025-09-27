@@ -1,0 +1,15 @@
+ .projects-intro {
+     max-width: 1200px;
+     margin: 80px auto 6px auto;
+     padding: 0 20px;
+ }
+
+ .projects-intro h2 {
+     font-size: 44px;
+     margin: 0 0 6px 0;
+ }
+
+ .projects-intro p {
+     color: #2a3b2e;
+     margin: 0;
+ }

@@ -1,0 +1,381 @@
+/* Health Driven System Page Styles */
+
+/* Section 1: IAQ-First Strategies */
+.iaq-strategies-section {
+  padding: 80px 20px;
+  background: #ffffff;
+  position: relative;
+}
+
+.iaq-strategies-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(189, 216, 153, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(189, 216, 153, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.section-main-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2b3a2f;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.strategies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.strategy-card {
+  background: #f7f9f7;
+  border-radius: 12px;
+  padding: 30px;
+  border-left: 4px solid #4e8a00;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.strategy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.strategy-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.strategy-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #d0d0d0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.strategy-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2b3a2f;
+  margin-bottom: 15px;
+}
+
+.strategy-description {
+  font-size: 15px;
+  color: #4a5a4d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.strategies-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #4a5a4d;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  max-width: fit-content;
+}
+
+.strategies-cta:hover {
+  color: #4e8a00;
+}
+
+.cta-arrow {
+  font-size: 18px;
+  color: #4e8a00;
+}
+
+.cta-text {
+  text-decoration: underline;
+}
+
+/* Section 2: What We Measure, Improves */
+.measurement-section {
+  padding: 80px 20px;
+  background: #f7f9f7;
+  position: relative;
+}
+
+.measurement-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 30% 30%, rgba(189, 216, 153, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(189, 216, 153, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.measurement-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2b3a2f;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.measurement-description {
+  font-size: 16px;
+  color: #4a5a4d;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.measurement-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+}
+
+.measurement-tool {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.measurement-tool:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.tool-image {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tool-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tool-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b3a2f;
+  margin: 0;
+}
+
+/* Section 3: Health Outcomes in Real Projects */
+.projects-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.project-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.project-arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2b3a2f;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  padding: 30px;
+  background: #ffffff;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4e8a00;
+  margin-bottom: 15px;
+}
+
+.project-type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #4a5a4d;
+}
+
+.building-icon {
+  font-size: 16px;
+}
+
+.project-outcomes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-outcomes li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: #4a5a4d;
+  position: relative;
+  padding-left: 20px;
+}
+
+.project-outcomes li::before {
+  content: '•';
+  color: #4e8a00;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.projects-cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  color: #2b3a2f;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.cta-arrow {
+  font-size: 18px;
+  color: #4e8a00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-main-title,
+  .measurement-title {
+    font-size: 28px;
+  }
+  
+  .strategies-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .measurement-tools {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .strategy-card,
+  .measurement-tool {
+    padding: 20px;
+  }
+  
+  .projects-cta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .iaq-strategies-section,
+  .measurement-section,
+  .projects-section {
+    padding: 60px 15px;
+  }
+  
+  .section-main-title,
+  .measurement-title {
+    font-size: 24px;
+  }
+  
+  .strategy-image,
+  .tool-image {
+    height: 150px;
+  }
+  
+  .project-content {
+    padding: 20px;
+  }
+  
+  .strategies-cta,
+  .projects-cta {
+    font-size: 14px;
+  }
+}

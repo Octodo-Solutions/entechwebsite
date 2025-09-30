@@ -40,8 +40,8 @@ const WorkflowSteps = () => {
   return (
     <section className="section light">
       <div className="section-container">
-        <h2 className="section-title" style={{ textAlign: 'center' }}>29 years of experience</h2>
-        <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: 40 }}>In the industry means the following unparalleled benefits for our clients</p>
+        <h2 className="section-title">29 years of experience</h2>
+        <p className="section-subtitle" style={{ marginBottom: 40 }}>In the industry means the following unparalleled benefits for our clients</p>
         <div className="wf-marquee">
           <div className="wf-row wf-row-right">
             <Track items={topItems} />

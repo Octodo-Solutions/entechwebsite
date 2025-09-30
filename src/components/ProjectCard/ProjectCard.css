@@ -25,4 +25,44 @@
   .project-card .outcome {
     color: #00cc66;
   }
+
+/* Responsive Project Card */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+  
+  .project-card h3 {
+    font-size: 1.25rem;
+  }
+  
+  .project-card .location {
+    font-size: 0.9rem;
+  }
+  
+  .project-card ul {
+    margin: 0.5rem 0 1rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 1rem;
+    margin: 0.75rem 0;
+  }
+  
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .project-card .location {
+    font-size: 0.85rem;
+  }
+  
+  .project-card ul {
+    margin: 0.5rem 0 1rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}
   

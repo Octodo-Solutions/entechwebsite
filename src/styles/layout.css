@@ -31,6 +31,13 @@
   font-weight: 700;
 }
 
+/* Ensure section titles maintain 32px on large screens */
+@media (min-width: 1025px) {
+  .section-title {
+    font-size: 32px !important;
+  }
+}
+
 .section-subtitle {
   color: #4a5a4d;
   font-size: 15px;
@@ -49,6 +56,50 @@
   background: #0e1b12;
   color: #d6e6d9;
   border-color: #2b3a2f;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .section-container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 15px;
+  }
+  
+  .section.sm {
+    padding: 40px 15px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .section-subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 20px 10px;
+  }
+  
+  .section.sm {
+    padding: 30px 10px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .section-subtitle {
+    font-size: 13px;
+  }
 }
 
 

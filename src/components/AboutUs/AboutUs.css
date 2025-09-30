@@ -1,0 +1,156 @@
+.about-us-section {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-us-image {
+  width: 100%;
+  height: 520px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-decoration {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.about-us-line {
+  width: 42px;
+  height: 6px;
+  border-radius: 999px;
+  background: #7fbf86;
+  display: inline-block;
+}
+
+.about-us-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7fbf86;
+  display: inline-block;
+}
+
+.about-us-title {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+}
+
+.about-us-subtitle {
+  margin: 10px 0 24px 0;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.about-us-button {
+  background: #f5f5f5;
+  color: #2b3a2f;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.about-us-button:hover {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+
+.about-us-button-arrow {
+  background: #2b3a2f;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .about-us-section {
+    gap: 50px;
+  }
+  
+  .about-us-image {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .about-us-image {
+    height: 350px;
+    order: 1;
+  }
+  
+  .about-us-content {
+    order: 2;
+  }
+  
+  .about-us-subtitle {
+    text-align: left;
+    margin: 8px 0 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-section {
+    gap: 20px;
+  }
+  
+  .about-us-image {
+    height: 280px;
+  }
+  
+  .about-us-decoration {
+    margin-bottom: 10px;
+  }
+  
+  .about-us-line {
+    width: 35px;
+    height: 5px;
+  }
+  
+  .about-us-dot {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .about-us-subtitle {
+    margin: 6px 0 16px 0;
+    font-size: 14px;
+  }
+  
+  .about-us-button {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+  
+  .about-us-button-arrow {
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+  }
+}

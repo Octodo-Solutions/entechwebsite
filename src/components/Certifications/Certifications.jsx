@@ -35,13 +35,13 @@ const Certifications = () => {
     <section className="section light awards-section" style={{ backgroundImage: `url(${bgPattern})` }}>
       <div className="section-container">
         <div className="awards-header">
-          <img className="wreath wreath-left" src={wreathLeft} alt="left wreath" />
+          <img className="wreath wreath-left" src={wreathRight} alt="left wreath" />
           <div className="awards-text">
             <div className="awards-eyebrow">We are Affiliated</div>
             <h2 className="section-title" style={{ margin: '4px 0' }}>Recognized. Certified. Trusted.</h2>
             <div className="awards-sub">to the highest industry standards</div>
           </div>
-          <img className="wreath wreath-right" src={wreathRight} alt="right wreath" />
+          <img className="wreath wreath-right" src={wreathLeft} alt="right wreath" />
         </div>
 
         <div className="awards-grid">

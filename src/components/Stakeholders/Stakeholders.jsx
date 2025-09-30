@@ -16,15 +16,10 @@ const Stakeholders = () => {
   return (
     <section className="section light">
       <div className="section-container">
-        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: 20 }}>
+        <h2 className="section-title" style={{ marginBottom: 20 }}>
           Working with each <span style={{ color: '#2b3a2f' }}>stakeholder</span> to ensure all project goals and objectives are met.
         </h2>
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(4, minmax(0,1fr))', 
-          gap: '20px',
-          marginTop: '32px'
-        }}>
+        <div className="stakeholders-grid">
           {stakeholders.map(stakeholder => (
             <div key={stakeholder.name} className="stk-card">
               <img className="stk-icon" src={stakeholder.icon} alt={stakeholder.name} />

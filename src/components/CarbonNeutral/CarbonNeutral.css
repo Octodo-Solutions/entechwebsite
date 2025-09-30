@@ -60,14 +60,102 @@
   font-size: 22px;
 }
 
+@media (max-width: 1024px) {
+  .cn-section {
+    padding: 60px 20px;
+  }
+  
+  .cn-card {
+    padding: 35px 35px;
+    gap: 25px;
+  }
+  
+  .cn-title {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 900px) {
   .cn-card {
     grid-template-columns: 1fr;
+    padding: 30px 30px;
+    gap: 20px;
   }
 
   .cn-leaf {
     max-width: 260px;
     justify-self: center;
+  }
+  
+  .cn-title {
+    font-size: 26px;
+    text-align: left;
+  }
+  
+  .cn-desc {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .cn-section {
+    padding: 50px 15px;
+  }
+  
+  .cn-card {
+    padding: 25px 25px;
+  }
+  
+  .cn-title {
+    font-size: 24px;
+    margin: 0 0 12px 0;
+  }
+  
+  .cn-desc {
+    font-size: 14px;
+    margin: 0 0 14px 0;
+  }
+  
+  .cn-desc.small {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cn-section {
+    padding: 40px 10px;
+  }
+  
+  .cn-card {
+    padding: 20px 20px;
+    gap: 15px;
+  }
+  
+  .cn-leaf {
+    max-width: 200px;
+  }
+  
+  .cn-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+  
+  .cn-desc {
+    font-size: 13px;
+    margin: 0 0 12px 0;
+  }
+  
+  .cn-desc.small {
+    font-size: 12px;
+  }
+  
+  .cn-cta {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+  
+  .cn-emoji {
+    font-size: 18px;
   }
 }
 

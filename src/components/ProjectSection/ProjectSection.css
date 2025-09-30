@@ -133,12 +133,18 @@
 }
 
 @media (max-width: 860px) {
+  .proj-title {
+    
+    font-size: 28px;
+  }
   .proj-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .proj-hero {
     height: 180px;
+    width: 100%;
   }
 
   .proj-carousel {

@@ -66,9 +66,7 @@
   }
   
   .contact-left {
-    width: 100%;
-    height: 40vh;
-    padding: 0;
+   display: none;
   }
   
   .contact-right {

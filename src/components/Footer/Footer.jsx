@@ -13,8 +13,8 @@ const Footer = () => {
           <nav className="ft-nav">
             <a href="/">Home</a>
             <a href="/projects">Projects</a>
-            <a href="/systems">Systems</a>
-            <a href="/insights">Insights</a>
+            {/* <a href="/systems">Systems</a>
+            <a href="/insights">Insights</a> */}
           </nav>
           <div className="ft-cta">
             <div className="ft-cta-title">Contact us Today →</div>
